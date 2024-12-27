@@ -51,7 +51,7 @@
             rust.nightly."2024-12-20".default.override {
               extensions = [
                 "rust-src"
-                "rust-fmt"
+                "rustfmt"
                 "clippy"
               ];
             };
