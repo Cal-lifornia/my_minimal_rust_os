@@ -63,20 +63,20 @@
         {
           default = pkgs.mkShell {
             packages = with pkgs; [
-              # rustToolchain
+              rustToolchain
               openssl
               pkg-config
               cargo-deny
               cargo-edit
               cargo-watch
-              # rust-analyzer
+              rust-analyzer
               cargo-insta
             ];
 
-            # env = {
-            #   # Required by rust-analyzer
-            #   RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
-            # };
+            env = {
+              # Required by rust-analyzer
+              RUST_SRC_PATH = "${pkgs.rustToolchain}/lib/rustlib/src/rust/library";
+            };
           };
         }
       );
