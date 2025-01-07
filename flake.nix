@@ -71,6 +71,7 @@
               cargo-watch
               rust-analyzer
               cargo-insta
+              cargo-bootimage
             ];
 
             env = {
@@ -81,4 +82,5 @@
         }
       );
     };
+
 }

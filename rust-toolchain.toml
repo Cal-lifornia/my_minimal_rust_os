@@ -1,5 +1,5 @@
 [toolchain]
 channel = "nightly-2024-12-20"
-components = ["rust-src", "rustfmt", "clippy"]
+components = ["rust-src", "rustfmt", "clippy", "llvm-tools-preview"]
 targets = ["thumbv7em-none-eabihf"]
 profile = "default"
